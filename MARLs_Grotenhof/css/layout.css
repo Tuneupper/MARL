@@ -11,3 +11,43 @@ body {
   font-size: 18pt;	
   text-align: center;	
 }
+
+header {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+
+header img {
+  max-width: 20%;
+  height: auto;
+}
+
+#menue {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#menue ul {
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  list-style: none;
+}
+
+#menue a {
+  padding: 12px 30px;
+  color: #BBB;
+  font-size: 1.8rem;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#menue a:hover, #menue #aktuell {
+  color: #FFF;
+  text-decoration: underline;
+}
