@@ -49,14 +49,14 @@ header img
 #menue a 
 {
   background-color: #8da077;
-  padding: 10px 20px;
+  padding: 10px 0px;
   color:#fdefeaee;
   font-size: 1.8rem;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  width: 250px;
+  width: 210px;
 }
 
 #nws a, #start a
@@ -75,7 +75,7 @@ header img
   text-decoration: underline;
 }
 
-@media (max-width:1135px )
+@media (max-width:1050px )
 {
   #menue 
   {
@@ -92,6 +92,7 @@ header img
   #menue a 
   {
     width: 100%;
+    padding: 5px 0px;
   }
 
 }
