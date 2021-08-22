@@ -6,40 +6,44 @@
 }
 
 
-body {
+body 
+{
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18pt;	
-  text-align: center;	
+  text-align: center;
+  background-color: #fdefea;	
 }
 
-header {
+header 
+{
   text-align: center;
-  background-color: white;
   padding: 10px;
 }
 
-header img {
+header img 
+{
   max-width: 20%;
   height: auto;
 }
 
-#menue {
-  background-color: black;
+#menue 
+{
   position: sticky;
-  top: 0;
-  z-index: 10;
 }
 
-#menue ul {
+#menue ul 
+{
   display: flex;
   height: 45px;
   justify-content: center;
   list-style: none;
 }
 
-#menue a {
+#menue a 
+{
+  background-color: #8da077;
   padding: 12px 30px;
-  color: #BBB;
+  color:#fdefeaee;
   font-size: 1.8rem;
   display: block;
   text-decoration: none;
@@ -47,7 +51,8 @@ header img {
   letter-spacing: 3px;
 }
 
-#menue a:hover, #menue #aktuell {
+#menue a:hover, #menue #aktuell 
+{
   color: #FFF;
   text-decoration: underline;
 }
