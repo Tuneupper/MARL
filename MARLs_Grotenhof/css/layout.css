@@ -61,7 +61,17 @@ header img
 
 #nws a, #start a
 {
-  width: 150px;
+  width: 170px;
+}
+
+#nws a
+{
+  padding-right: 25px;
+}
+
+#start a
+{
+  padding-left: 25px;
 }
 
 #angebot a
@@ -75,13 +85,13 @@ header img
   text-decoration: underline;
 }
 
-@media (max-width:1050px )
+@media (max-width:1150px )
 {
   #menue 
   {
     position:initial;
     margin: 10px;
-    padding-top: 90px;
+    padding-top: 70px;
   }
 
   #menue ul 
