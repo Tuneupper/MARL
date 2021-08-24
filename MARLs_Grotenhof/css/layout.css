@@ -15,6 +15,7 @@ body
   display: flex;
   justify-content: center;
   align-items: center;	
+  flex-direction: column;
 }
 
    /*Wegen desktop first wird das Burger Menü nicht angezeigt.*/
@@ -35,9 +36,11 @@ header img
   width: 300px;
 }
    /*Lässt die Navigationsleiste oben kleben bei der Desktop-ansicht*/
-#menue 
+#oben
 {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
+  top: -330px;
 }
 
     /*Lässt flex zu, gibt die höhe von 45px, lässt alles in der mitte erscheinen und die
@@ -92,6 +95,8 @@ header img
   text-decoration: underline;
 }
 
+
+
 /*Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
@@ -100,11 +105,6 @@ header img
 {
   width: 100%;
 }
-  /*
-
-WIE????
-
-*/
 
 body header
 {
@@ -130,6 +130,13 @@ nav[role=navigation]
 #menue 
 {
   display: none;
+}
+
+#bm
+{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 /*Div Burgermenü als block und relativer Position zum positionieren von
@@ -239,6 +246,7 @@ nav[role=navigation]
    padding-left: 50px;
    padding-top: 60px;
    padding-bottom: 15px;
+   position: sticky;
    background: rgba(141, 160, 119,0.8);
    list-style: none;
    transform-origin: 0% 0%;
