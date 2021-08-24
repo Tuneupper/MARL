@@ -95,25 +95,28 @@ header img
 /*Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
-/*
+
+#oben
+{
+  width: 100%;
+}
+  /*
 
 WIE????
 
 */
-body
-{
-  justify-content: initial;
-}
 
 body header
 {
-
-  justify-content: center;
+  position: relative;
 }
 
 header img 
 {
   width: 200px;
+  position: absolute;
+  right:3%;
+  top: 0;
 }
 
 
@@ -231,12 +234,12 @@ nav[role=navigation]
  #menu
  {
    position: absolute;
-   width: 1120px;
+   width: 100%;
    margin: -100px 0 0 -50px;
    padding-left: 50px;
    padding-top: 60px;
    padding-bottom: 15px;
-   background: #8da077;
+   background: rgba(141, 160, 119,0.8);
    list-style: none;
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
