@@ -170,7 +170,7 @@ nav[role=navigation]
    width: 40px;
    height: 32px;
    position: absolute;
-   top: -7px;
+   top: -50px;
    left: -5px;
    opacity: 0;
    z-index: 2; 
@@ -188,6 +188,8 @@ nav[role=navigation]
    height: 4px;
    margin-bottom: 5px;
    position: relative;
+   top: -43px;
+   left: 3px;
    background: #8da077;
    border-radius: 3px;
    z-index: 1;
@@ -231,8 +233,9 @@ nav[role=navigation]
    position: absolute;
    width: 1120px;
    margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
+   padding-left: 50px;
+   padding-top: 60px;
+   padding-bottom: 15px;
    background: #8da077;
    list-style: none;
    transform-origin: 0% 0%;
