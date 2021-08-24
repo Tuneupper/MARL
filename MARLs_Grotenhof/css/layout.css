@@ -6,61 +6,56 @@
   box-sizing: border-box;
 }
 
-   /* Schriftart, Größe, Hintergrundfarbe, display flex und alles in der Mitte*/
+   /* Schriftart, Größe, Hintergrundfarbe*/
 body 
 {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18pt;	
-  background-color: #fdefea;
-  display: flex;
-  justify-content: center;
-  align-items: center;	
-  flex-direction: column;
+  background-color: #fdefea; 
 }
 
-   /*Wegen desktop first wird das Burger Menü nicht angezeigt.*/
-nav[role=navigation]
-{
-  display: none;
-}
-   /*Zentriert das Logo oben und gibt ihm Platz*/
+/*Zentriert das Logo oben und gibt ihm Platz*/
 header 
 {
   text-align: center;
   padding: 10px;
 }
 
-  /*Gibt dem Logo seine Größe*/
-header img 
+/*Gibt dem Logo seine Größe*/
+img#logo
 {
   width: 300px;
 }
-   /*Lässt die Navigationsleiste oben kleben bei der Desktop-ansicht*/
-#oben
+
+/*Gibt der Navigation Farbe, padding top passt den abstand zur oberen
+Kante an, position sticky lässt die nav bar oben dran kleben.*/
+nav#menue
 {
+  background-color: #8da077;
+  padding-top: 10px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: -330px;
+  top: 0;
 }
 
-    /*Lässt flex zu, gibt die höhe von 45px, lässt alles in der mitte erscheinen und die
-    ul punkte verschwinden*/
+/*Lässt flex zu, gibt die höhe von 40px, lässt alles in der mitte erscheinen 
+und die ul-punkte verschwinden*/
 #menue ul 
 {
   display: flex;
-  height: 45px;
+  height: 40px;
   justify-content: center;
+  vertical-align: middle;
   list-style: none;
 }
 
-   /*Setzt die Farbe fest, gibt ein padding oben und unten, gibt die Schriftfarbe, 
-   Setzt die Schrftgröße auf das 1,8 fache, Lässt alles im block erscheinen, ohne 
-   Dekorationen, alles in Großschrift, mit einem spacing von 2 px und einer breite 210px von jedem
-   Feld udn lässt alles in der Mitte seines feldes erscheinen.*/
+/*Setzt die Farbe fest, gibt die Schriftfarbe, Setzt die Schrftgröße auf das
+1,8 fache, Lässt alles im block erscheinen, ohne Dekorationen, alles in 
+Großschrift, mit einem spacing von 2 px und einer breite 210px von jedem
+Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem 
+ändert sich die Farbe langsam beim hovern.*/
 #menue a 
 {
-  background-color: #8da077;
-  padding: 10px 0px;
   color:#fdefead8;
   font-size: 1.8rem;
   display: block;
@@ -73,12 +68,7 @@ header img
 }
 
 /*Folgende drei felder Passen die Größe an*/
-#nws a
-{
-  width: 180px;
-}
-
-#start a
+#start a, #nws a
 {
   width: 180px;
 }
@@ -94,8 +84,6 @@ header img
   color: #FFF;
   text-decoration: underline;
 }
-
-
 
 /*Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
@@ -119,153 +107,6 @@ header img
   top: 0;
 }
 
-
-/*Burgermenu anzeigen lassen*/
-nav[role=navigation]
-{
-  display: initial;
-}
-
-/*Desktop Menü ausblenden lassen*/  
-#menue 
-{
-  display: none;
-}
-
-#bm
-{
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-/*Div Burgermenü als block und relativer Position zum positionieren von
- top und left, z index sagt die Schichtung der einzelteile an und verhindert,
- das der user durch lange halten oder doppelklick was markiert statt zu drücken. */
-#burgermenu
-{
-  display: block;
-  position: relative;
-  top: 60px;
-  left: 50px;
-  z-index: 1;
-  user-select: none;
-}  
-
- /*Die einzelnen Elemente des Menüs bekommen keine textdekoration, 
- die Farbe, Großschrift, größe, spacing und lässt die Farbe sich langsam ändern. */
- #burgermenu a
- {
-   text-decoration: none;
-   color: #fdefeaee;
-   text-transform: uppercase;
-   font-size: 1.8rem;
-   letter-spacing: 2px;
-   transition: color 0.7s ease;
- }
- 
- /*Hovereffekt des Burgermenüs*/
- #burgermenu a:hover
- {
-  color: #FFF;
-  text-decoration: underline;
- }
- 
- /*die Checkbox fungiert als Input. Sie setzt die Größe fest und positioniert sie
- über dem Burger Menü. Die Opazität lässt es verschwinden und mit dem z index wird es über
- den Burger gelegt. Der Curser wird zum pointer (Finger) */
- #burgermenu input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -50px;
-   left: -5px;
-   opacity: 0;
-   z-index: 2; 
-   cursor: pointer;
- }
- 
- /*Der Burger wird gebaut: Jedes teil besteht aus einer span. Es wird Größe und 
- höhe eingegeben, und die Position relativ. DIe farbe wird geändert und der Rand rund gemacht.
- Er bekommt den Z index 1 um ihn auf der rechten ebene zu haben, die transform origin lässt
- die einzelnen teile sich bewegen. Die transition wird getimed.*/
- #burgermenu span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   top: -43px;
-   left: 3px;
-   background: #8da077;
-   border-radius: 3px;
-   z-index: 1;
-   transform-origin: 4px 0px;
-   transition: transform 0.5s cubic-bezier(0.7,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.7,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- 
-/*Richtung der Rotation*/
- #burgermenu span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /*Rotieren der teile um 45° und korrektes positionieren sowie färben*/
- #burgermenu input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #fdefeaee;
- }
-
-  /*rotieren des unteren pattys in die entgegengesetzte Richtung.*/
-  #burgermenu input:checked ~ span:nth-last-child(2)
-  {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
- 
- /*verstecken des mittleren Balkens*/
- #burgermenu input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*Positionierung des Menüs, Farbe, listenstiel, und transformationsinfos zum aufruf.*/
- #menu
- {
-   position: absolute;
-   width: 100%;
-   margin: -100px 0 0 -50px;
-   padding-left: 50px;
-   padding-top: 60px;
-   padding-bottom: 15px;
-   position: sticky;
-   background: rgba(141, 160, 119,0.8);
-   list-style: none;
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   transition: transform 0.5s cubic-bezier(0.7,0.2,0.05,1.0);
- }
- 
- /*Abstand der Listenelemente*/
- #menu li
- {
-   padding: 10px 0;
- }
- 
-  /*von links einfliegen lassen*/
-  #burgermenu input:checked ~ ul
-  {
-    transform: none;
-  }
-
 }
 
 @media (max-width:500px )
@@ -281,7 +122,5 @@ nav[role=navigation]
   {
     width: 100px;
   }
-
-
 
 }
