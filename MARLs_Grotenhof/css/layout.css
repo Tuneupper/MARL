@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*Ausblenden des hamburgermenüs*/
+.ham
+{
+  display: none;
+}
+.menu
+{
+  display: none;
+}
 
    /* Schriftart, Größe, Hintergrundfarbe*/
 body 
@@ -56,7 +65,7 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 ändert sich die Farbe langsam beim hovern.*/
 #menue a 
 {
-  color:#fdefead8;
+  color:#fdefea;
   font-size: 1.8rem;
   display: block;
   text-decoration: none;
@@ -89,29 +98,101 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 @media (max-width:1120px )
 {
 
-#oben
+/*Ausblenden der nav-Leiste*/
+  #menue
+  {
+    display: none;
+  }
+/*Einblenden des Hamburgermenüs*/
+  .ham
 {
-  width: 100%;
+  display: initial;
 }
 
-body header
+.menu
+{
+  display: initial;
+}
+
+/*Hamburgermenü im folgenden*/
+/*----------------------------------------------------------------------------*/
+  .ham 
+  {
+    position: fixed;
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #8da077;
+    cursor: pointer;
+  }
+  
+  .xIcon 
+  {
+    display: none;
+  }
+  
+  .menu 
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #8da077da;
+    color:#fdefea;
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+    list-style: none;
+    padding-top: 60px;
+  }
+  
+  .showMenu 
+  {
+    transform: translateY(0);
+  }
+  
+  li 
+  {
+    padding: 10px 0;
+  }
+  
+  .menu a 
+  {
+    margin-left: 10px;
+    color:#fdefea;
+    font-size: 1.8rem;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 210px;
+    transition: color 0.7s ease;
+  }
+  
+  .menu a:hover, .menu #aktuell 
+{
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------------*/
+
+header
 {
   position: relative;
+  text-align: right;
 }
 
-header img 
+img#logo
 {
   width: 200px;
-  position: absolute;
-  right:3%;
-  top: 0;
 }
-
 }
-
 @media (max-width:500px )
 {
-/*muss irgendwie nach rechts...*/
   header 
   {
     text-align: right;
