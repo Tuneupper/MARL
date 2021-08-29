@@ -205,3 +205,105 @@ img#logo
   }
 
 }
+/* Anfang Texte index*/
+
+#willkommen
+{
+ background-color: #F0B7A3;
+ width: 1000px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 50px;
+}
+
+#hofvideo
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+/* unser hof*/
+
+#famfoto
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#hofgeschichte
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+
+#standbeine
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  
+}
+
+          #schweine
+          {
+            background-color: blue;
+          }
+          
+          #energie
+          {
+            background-color: burlywood;
+          }
+
+          #ackerbau
+          {
+            background-color: blue;
+          }
+
+#diashow
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+/* unser Angebot*/
+
+#produktinfo
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#rondell
+{
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
