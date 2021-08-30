@@ -71,21 +71,11 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  width: 210px;
+  width: 310px;
   text-align: center;
   transition: color 0.7s ease;
 }
 
-/*Folgende drei felder Passen die Größe an*/
-#start a, #nws a
-{
-  width: 180px;
-}
-
-#angebot a
-{
-  width: 340px;
-}
 
 /*Lassen das aktuelle sowie das "hovernde" Feld unterstrichen sein*/
 #menue a:hover, #menue #aktuell 
