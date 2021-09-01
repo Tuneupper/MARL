@@ -28,6 +28,9 @@ header
 {
   text-align: center;
   padding: 10px;
+  background-image: url("../pics/cam/2_Banner.jpg");
+  background-size: cover;
+  background-position-y: bottom;
 
 }
 
@@ -270,7 +273,6 @@ header
  background-color: #F0B7A3;
  width: 1120px;
  display: flex;
- 
  justify-content: center;
  align-items: center;
  margin: 50px;
