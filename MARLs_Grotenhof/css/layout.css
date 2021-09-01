@@ -28,23 +28,23 @@ header
 {
   text-align: center;
   padding: 10px;
+
 }
 
 /*Gibt dem Logo seine Größe*/
-img#logo
+#logo
 {
   width: 300px;
 }
 
 /*Gibt der Navigation Farbe, padding top passt den abstand zur oberen
 Kante an, position sticky lässt die nav bar oben dran kleben.*/
-nav#menue
+#menue
 {
   background-color: #8da077;
-  padding-top: 10px;
+  padding-top: 15px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
 }
 
 /*Lässt flex zu, gibt die höhe von 40px, lässt alles in der mitte erscheinen 
@@ -66,7 +66,7 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 #menue a 
 {
   color:#fdefea;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -83,17 +83,11 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   color: #FFF;
   text-decoration: underline;
 }
-
- 
+/*---------------------------------dropdown in arbeit----------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/ 
 #dropdown ul
 {
   display:none;
-}
-
-.submenu a
-{
-  background-color: #8da077;
-  padding:15px;
 }
 
 #dropdown:hover ul 
@@ -101,6 +95,59 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   display:block;
   z-index:500;
 }
+
+.submenu
+{
+position: absolute;
+}
+
+
+#Dienstleistungen
+{
+  background-color:  #8da077;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+#Hofladen
+{
+  background-color:#8da077 ;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+.submenu li
+{
+  width: 320px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
@@ -197,7 +244,7 @@ header
   text-align: right;
 }
 
-img#logo
+#logo
 {
   width: 200px;
 }
@@ -221,8 +268,9 @@ img#logo
 #willkommen
 {
  background-color: #F0B7A3;
- width: 1000px;
+ width: 1120px;
  display: flex;
+ 
  justify-content: center;
  align-items: center;
  margin: 50px;
