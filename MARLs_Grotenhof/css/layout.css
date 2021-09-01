@@ -85,7 +85,6 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 }
 
  
-
 #dropdown ul
 {
   display:none;
@@ -94,7 +93,6 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 .submenu a
 {
   background-color: #8da077;
-  text-align: center;
   padding:15px;
 }
 
