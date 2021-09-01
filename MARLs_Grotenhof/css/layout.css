@@ -48,6 +48,7 @@ Kante an, position sticky lässt die nav bar oben dran kleben.*/
   padding-top: 15px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
+  top:0;
 }
 
 /*Lässt flex zu, gibt die höhe von 40px, lässt alles in der mitte erscheinen 
