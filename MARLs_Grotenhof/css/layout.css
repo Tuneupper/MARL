@@ -71,7 +71,7 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  width: 310px;
+  width: 224px;
   text-align: center;
   transition: color 0.7s ease;
 }
@@ -84,6 +84,26 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-decoration: underline;
 }
 
+ 
+
+#dropdown ul
+{
+  display:none;
+}
+
+.submenu a
+{
+  background-color: #8da077;
+  text-align: center;
+  padding:15px;
+}
+
+#dropdown:hover ul 
+{
+  display:block;
+  z-index:500;
+}
+
 /*Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
@@ -93,6 +113,9 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   {
     display: none;
   }
+
+
+
 /*Einblenden des Hamburgermenüs*/
   .ham
 {
