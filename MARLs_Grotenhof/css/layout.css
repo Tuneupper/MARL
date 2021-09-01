@@ -217,14 +217,9 @@ img#logo
   margin: 50px;
 }
 
-/* über uns*/
-#Vorstellung
-{
-  background-color: #F0B7A3;
-  width: 1000px;
-  margin: 50px;
-}
-#familie
+/* unser hof*/
+
+#famfoto
 {
   background-color: #F0B7A3;
   width: 1000px;
@@ -233,9 +228,6 @@ img#logo
   align-items: center;
   margin: 50px;
 }
-
-
-/* unser hof*/
 
 #hofgeschichte
 {
@@ -261,7 +253,7 @@ img#logo
 
           #schweine
           {
-            background-color:orange;
+            background-color: blue;
           }
           
           #energie
@@ -271,7 +263,7 @@ img#logo
 
           #ackerbau
           {
-            background-color: orange;
+            background-color: blue;
           }
 
 #diashow
@@ -286,7 +278,7 @@ img#logo
 
 /* unser Angebot*/
 
-#dienstleistungen
+#produktinfo
 {
   background-color: #F0B7A3;
   width: 1000px;
@@ -296,12 +288,12 @@ img#logo
   margin: 50px;
 }
 
-
-/* Texte formatieren */
-
-h1
+#rondell
 {
-  font-family: 'Shadows Into Light', cursive;
- font-weight: bold;
- font-size: 24pt;
+  background-color: #F0B7A3;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
