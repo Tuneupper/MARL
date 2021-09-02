@@ -366,3 +366,14 @@ header
   align-items: center;
   margin: 50px;
 }
+
+
+
+/* Textformatierung */
+
+h1
+{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 35px;
+  text-align: center;
+}
