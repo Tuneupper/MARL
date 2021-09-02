@@ -76,8 +76,14 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 224px;
-  text-align: center;
+  padding-left: 30px;
   transition: color 0.7s ease;
+}
+
+#aktuell.start
+{
+  width: 160px;
+  margin-left: 30px;
 }
 
 
@@ -110,28 +116,24 @@ position: absolute;
 {
   background-color:  #8da077;
   padding-top: 15px;
-  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5px;
-  position: relative;
+
 }
 
 #Hofladen
 {
   background-color:#8da077 ;
   padding-top: 10px;
-  padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
-  position: relative;
-
+ 
 }
 
-.submenu li
+#Hofladen a, #Dienstleistungen a
 {
-  width: 320px;
+width: 320px;
 }
-
 /*-------------------------------------------------------------------------------------------*/
 
 
@@ -269,25 +271,20 @@ header
 }
 /* Anfang Texte index*/
 
-#willkommen
+#willkommen, #hofvideo
 {
- background-color: #F0B7A3;
- width: 1120px;
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 50px;
-}
-
-#hofvideo
-{
-  background-color: #F0B7A3;
-  width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
 }
+#willkommen p, #hofvideo p
+{
+  background-color: #F0B7A3;
+  width: 1120px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 
 /* unser hof*/
 
