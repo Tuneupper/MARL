@@ -21,6 +21,7 @@ body
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18pt;	
   background-color: #fdefea; 
+  text-align: center;
 }
 
 /*Zentriert das Logo oben und gibt ihm Platz*/
@@ -376,4 +377,10 @@ h1
   font-family: 'Shadows Into Light', cursive;
   font-size: 35px;
   text-align: center;
+}
+
+.unterschrift
+{
+  font-family: 'Allison', cursive;
+  font-size: 35px;
 }
