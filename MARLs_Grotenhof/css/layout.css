@@ -89,11 +89,17 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 
 
 /*Lassen das aktuelle sowie das "hovernde" Feld unterstrichen sein*/
-#menue a:hover, #menue #aktuell 
+#menue a:hover, #menue #aktuell
 {
   color: #FFF;
   text-decoration: underline;
 }
+
+#menue a:active
+{
+  color: rgb(216, 216, 216);
+}
+
 /*---------------------------------dropdown in arbeit----------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/ 
 #dropdown ul
@@ -378,7 +384,6 @@ h1
   font-size: 35px;
   text-align: center;
 }
-
 .unterschrift
 {
   font-family: 'Allison', cursive;
