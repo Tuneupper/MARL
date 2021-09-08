@@ -77,8 +77,8 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   width: 224px;
   padding-left: 30px;
   transition: color 0.7s ease;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #dropdown
@@ -90,7 +90,7 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 224px;
-  padding:15px 0px;
+  padding:10px 0px;
   padding-left: 30px;
   transition: color 0.7s ease;
 }
@@ -131,36 +131,39 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 {
   display:block;
   z-index:500;
-  transform:translate(-30px, 15px);
+  transform:translate(-30px, 10px);
+}
+
+#dropdown a
+{
+  padding-left: 50px;
 }
 
 .submenu
 {
-position: absolute;
+  position: absolute;
 }
 
 
 #Dienstleistungen
 {
   background-color:  #8da077;
-  padding-top: 15px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-text-align: left;
+  padding-top: 2,5px;
+  padding-bottom: 2,5px;
+  text-align: left;
 }
 
 #Hofladen
 {
   background-color:#8da077 ;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-top: 2,5px;
+  padding-bottom: 5px;
   text-align: left;
 }
 
 #Hofladen a, #Dienstleistungen a
 {
-width: 320px;
+width: 350px;
 }
 /*-------------------------------------------------------------------------------------------*/
 
