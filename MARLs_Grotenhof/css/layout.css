@@ -304,13 +304,16 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 #willkommen p, #hofvideo p
 {
-  background-color: #F0B7A3;
   width: 1120px;
-  padding: 20px;
   margin-top: 20px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -328,26 +331,33 @@ header
   padding-right: 50px;
   
 }
+#famfoto
+{
+  margin:80px;
+}
 
 #hofgeschichte
 {
-  background-color: #F0B7A3;
-  width: 1000px;
+  background-color: #ffffff;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  flex-direction: column;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
 #standbeine
 {
-  background-color: #F0B7A3;
-  width: 1000px;
+  background-color: #ffffff;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+ 
   
 }
 
@@ -366,21 +376,13 @@ header
             background-color: blue;
           }
 
-#diashow
-{
-  background-color: #F0B7A3;
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
+
 
 /* unser Angebot*/
 
 #produktinfo
 {
-  background-color: #F0B7A3;
+  background-color: #ffffff;
   width: 1000px;
   display: flex;
   justify-content: center;
@@ -390,7 +392,7 @@ header
 
 #rondell
 {
-  background-color: #F0B7A3;
+  background-color: #ffffff;
   width: 1000px;
   display: flex;
   justify-content: center;
