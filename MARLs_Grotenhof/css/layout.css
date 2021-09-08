@@ -46,7 +46,6 @@ Kante an, position sticky lässt die nav bar oben dran kleben.*/
 #menue
 {
   background-color: #8da077;
-  padding-top: 15px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top:0;
@@ -57,7 +56,6 @@ und die ul-punkte verschwinden*/
 #menue ul 
 {
   display: flex;
-  height: 40px;
   justify-content: center;
   vertical-align: middle;
   list-style: none;
@@ -79,6 +77,8 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   width: 224px;
   padding-left: 30px;
   transition: color 0.7s ease;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #dropdown
@@ -90,9 +90,12 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   text-transform: uppercase;
   letter-spacing: 2px;
   width: 224px;
+  padding:15px 0px;
   padding-left: 30px;
   transition: color 0.7s ease;
 }
+
+
 
 #aktuell.start
 {
@@ -119,11 +122,16 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 {
   display:none;
 }
+#submenu
+{
+  text-align: left;
+}
 
 #dropdown:hover ul 
 {
   display:block;
   z-index:500;
+  transform:translate(-30px, 15px);
 }
 
 .submenu
@@ -138,7 +146,7 @@ position: absolute;
   padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 5px;
-
+text-align: left;
 }
 
 #Hofladen
@@ -147,7 +155,7 @@ position: absolute;
   padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
- 
+  text-align: left;
 }
 
 #Hofladen a, #Dienstleistungen a
