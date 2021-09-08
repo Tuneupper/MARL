@@ -5,15 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*Ausblenden des hamburgermenüs*/
-.ham
-{
-  display: none;
-}
-.menu
-{
-  display: none;
-}
 
    /* Schriftart, Größe, Hintergrundfarbe*/
 body 
@@ -32,7 +23,6 @@ header
   background-image: url("../pics/cam/2_Banner.jpg");
   background-size: cover;
   background-position-y: middle;
-
 }
 
 /*Gibt dem Logo seine Größe*/
@@ -41,6 +31,18 @@ header
   width: 300px;
 }
 
+/*Ausblenden des hamburgermenüs*/
+.ham
+{
+  display: none;
+}
+.menu
+{
+  display: none;
+}
+
+
+/*------------------------------------------------------------------------Navleiste folgt vvvvv   */
 /*Gibt der Navigation Farbe, padding top passt den abstand zur oberen
 Kante an, position sticky lässt die nav bar oben dran kleben.*/
 #menue
@@ -81,6 +83,13 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   padding-bottom: 10px;
 }
 
+
+#aktuell.start
+{
+  width: 160px;
+  margin-left: 30px;
+}
+
 #dropdown
 {
   color:#fdefea;
@@ -96,14 +105,6 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 }
 
 
-
-#aktuell.start
-{
-  width: 160px;
-  margin-left: 30px;
-}
-
-
 /*Lassen das aktuelle sowie das "hovernde" Feld unterstrichen sein*/
 #menue a:hover, #menue #aktuell
 {
@@ -116,8 +117,6 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   color: rgb(216, 216, 216);
 }
 
-/*---------------------------------dropdown in arbeit----------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/ 
 #dropdown ul
 {
   display:none;
@@ -165,7 +164,104 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 {
 width: 350px;
 }
-/*-------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------^^^^^ Navleiste*/
+/* --------------------------------------------------------*/
+/* --------------------------index-------------------------*/
+/* --------------------------------------------------------*/
+
+#willkommen
+{
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  
+}
+#willkommen p
+{
+
+}
+
+#hofvideo
+{
+  margin-top: 10px;
+  background-color: #FFF;
+}
+
+
+/* --------------------------------------------------------*/
+/* ------------------------ÜBER UNS------------------------*/
+/* --------------------------------------------------------*/
+
+#familie
+{
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+#famfoto
+{
+  margin:80px;
+}
+
+/* --------------------------------------------------------*/
+/* -----------------------UNSER HOF------------------------*/
+/* --------------------------------------------------------*/
+
+#hofgeschichte
+{
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+#standbeine
+{
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+          #schweine
+          {
+            background-color: blue;
+          }
+          
+          #energie
+          {
+            background-color: burlywood;
+          }
+
+          #ackerbau
+          {
+            background-color: blue;
+          }
+
+
+
+/* --------------------------------------------------------*/
+/* --------------------DIENSTLEISTUNGEN--------------------*/
+/* --------------------------------------------------------*/
 
 
 
@@ -175,6 +271,9 @@ width: 350px;
 
 
 
+/* --------------------------------------------------------*/
+/* -------------------------Hofladen-----------------------*/
+/* --------------------------------------------------------*/
 
 
 
@@ -183,10 +282,30 @@ width: 350px;
 
 
 
+/* --------------------------------------------------------*/
+/* -------------------------Kontakt------------------------*/
+/* --------------------------------------------------------*/
+
+
+/* Textformatierung */
+
+h1
+{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+.unterschrift
+{
+  font-family: 'Allison', cursive;
+  font-size: 35px;
+}
 
 
 
-/*Im folgenden ist die i-Pad / Tablet variante */
+
+
+/*------------------------------------------Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
 
@@ -273,8 +392,6 @@ width: 350px;
   text-decoration: underline;
 }
 
-/*--------------------------------------------------------------------*/
-
 header
 {
   position: relative;
@@ -286,6 +403,7 @@ header
   width: 200px;
 }
 }
+/*-----------------------------------------------------------------------Handy variante vvvvv*/
 @media (max-width:500px )
 {
   header 
@@ -300,125 +418,3 @@ header
   }
 
 }
-/* Anfang Texte index*/
-
-#willkommen, #hofvideo
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-}
-#willkommen p, #hofvideo p
-{
-  width: 1120px;
-  margin-top: 20px;
-  padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-
-/* unser hof*/
-
-#familie
-{
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  
-}
-#famfoto
-{
-  margin:80px;
-}
-
-#hofgeschichte
-{
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-
-#standbeine
-{
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  
-}
-
-          #schweine
-          {
-            background-color: blue;
-          }
-          
-          #energie
-          {
-            background-color: burlywood;
-          }
-
-          #ackerbau
-          {
-            background-color: blue;
-          }
-
-
-
-/* unser Angebot*/
-
-#produktinfo
-{
-  background-color: #ffffff;
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
-#rondell
-{
-  background-color: #ffffff;
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
-
-
-/* Textformatierung */
-
-h1
-{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 35px;
-  text-align: center;
-}
-.unterschrift
-{
-  font-family: 'Allison', cursive;
-  font-size: 35px;
-}
-
-
-
-
