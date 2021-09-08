@@ -81,6 +81,19 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   transition: color 0.7s ease;
 }
 
+#dropdown
+{
+  color:#fdefea;
+  font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 224px;
+  padding-left: 30px;
+  transition: color 0.7s ease;
+}
+
 #aktuell.start
 {
   width: 160px;
@@ -295,14 +308,17 @@ header
 
 /* unser hof*/
 
-#famfoto
+#familie
 {
-  background-color: #F0B7A3;
-  width: 1000px;
+  background-color: #ffffff;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
 #hofgeschichte
@@ -389,3 +405,7 @@ h1
   font-family: 'Allison', cursive;
   font-size: 35px;
 }
+
+
+
+
