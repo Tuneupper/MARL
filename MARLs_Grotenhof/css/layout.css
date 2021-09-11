@@ -11,7 +11,7 @@ body
 {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18pt;	
-  background-color: #fdefea; 
+  background-color: #ffffff; 
   text-align: center;
   overflow-x: hidden;
 }
@@ -408,42 +408,40 @@ display: none;
 #hofgeschichte
 {
   background-color: #ffffff;
-  width: 100%;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 #standbeine
 {
   background-color: #ffffff;
-  width: 100%;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  
+  flex-direction: column;
+  padding: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-          #schweine
-          {
-            background-color: blue;
-          }
-          
-          #energie
-          {
-            background-color: burlywood;
-          }
-
-          #ackerbau
-          {
-            background-color: blue;
-          }
+.bild
+{
+ width:500px;  
+ margin-top: 50px;
+ margin-bottom: 50px;;
+}
 
 
 
@@ -474,6 +472,20 @@ display: none;
 /* -------------------------Kontakt------------------------*/
 /* --------------------------------------------------------*/
 
+#Kontakt
+{
+  background-color: #ffffff;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Textformatierung */
 
