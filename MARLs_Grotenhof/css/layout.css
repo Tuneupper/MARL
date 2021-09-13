@@ -9,12 +9,18 @@
    /* Schriftart, Größe, Hintergrundfarbe*/
 body 
 {
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 18pt;	
+  font-family: Arial,Helvetica,sans-serif;	
   background-color: #d6d8d4; 
   text-align: center;
   overflow-x: hidden;
   line-height:130%;
+}
+
+p
+{
+  font-size: 19px;
+  line-height:130%;
+  color: rgb(69, 69, 69);
 }
 
 /*Zentriert das Logo oben und gibt ihm Platz*/
@@ -190,6 +196,7 @@ h1
   font-size: 45px;
   text-align: center;
   padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .unterschrift
@@ -206,7 +213,7 @@ h1
   flex-direction: column;
   background-color: rgb(240, 240, 240);
   padding: 30px 100px 20px 100px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -214,6 +221,7 @@ h1
 #willkommen h1
 {
 font-size: 50px;
+padding-bottom: 30px;
 }
 
 #willkommen p
@@ -279,11 +287,12 @@ font-size: 50px;
 p.unterschrift
 {
   font-size: 50px;
+  color: darkblue;
 }
 
 #rondell
 {
-  margin-top: 60px;
+  margin-top: 30px;
   background-color: rgb(240, 240, 240);
   max-width: 1120px;
   height: 850px;
@@ -413,6 +422,7 @@ p.unterschrift
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  padding-top: 20px;
   height:200px;
 }
 
@@ -457,7 +467,7 @@ display: none;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
   padding-top: 0px;
 }
@@ -472,20 +482,13 @@ display: none;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #energie a
 {
 text-decoration: none;
 color: black;
-}
-
-#ackerbau
-{
-  margin-bottom: 0px;
-  background-color: rgb(240, 240, 240);
- 
 }
 
 /*
@@ -654,6 +657,20 @@ padding:20px;
   max-width: 1000px;
 }
 
+#kreisw
+{
+  max-width: 1120px;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(240, 240, 240);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
 
 
 /* --------------------------------------------------------*/
@@ -678,6 +695,11 @@ padding:20px;
 #dienstleistungen img
 {
   margin:10px;
+}
+
+#dienstleistungen h1
+{
+padding-bottom: 30px;
 }
 
 #Konta a
