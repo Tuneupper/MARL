@@ -570,13 +570,13 @@ padding:20px;
   transform: translateY(-7px);
 }
 
-
-
-.slideshow-container {
-  max-width: 1120px;
+.slideshow-container 
+{
+  max-width: 400px;
   position: relative;
   margin: auto;
 }
+
 .slideshow-container img
 {
   width: 400px;
