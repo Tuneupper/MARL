@@ -287,7 +287,7 @@ padding-bottom: 30px;
 p.unterschrift
 {
   font-size: 50px;
-  color: darkblue;
+  color:rgb(27, 27, 27); ;
 }
 
 #rondell
@@ -490,17 +490,6 @@ display: none;
 text-decoration: none;
 color: black;
 }
-
-/*
-#hof
-{
-  background-image: url(../pics/cam/luft/HofLuft.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  padding-bottom: 20px;
-}
-*/
 
 .hofbild
 {
