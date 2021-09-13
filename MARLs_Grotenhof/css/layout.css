@@ -18,13 +18,21 @@ body
   line-height:130%;
 }
 
+h1
+{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
 p
 {
   font-size: 19px;
   line-height:130%;
   color: rgb(69, 69, 69);
 }
-
 
 header 
 {
@@ -35,17 +43,16 @@ header
   background-position-y: middle;
 }
 
-
 #logo
 {
   width: 300px;
 }
 
-
 .ham
 {
   display: none;
 }
+
 .menu
 {
   display: none;
@@ -63,7 +70,6 @@ header
   z-index: 100;
 }
 
-
 #menue ul 
 {
   display: flex;
@@ -71,7 +77,6 @@ header
   vertical-align: middle;
   list-style: none;
 }
-
 
 #menue a 
 {
@@ -86,10 +91,7 @@ header
   transition: color 0.7s ease;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
-
-
 
 
 #dropdown
@@ -105,7 +107,6 @@ header
   padding-left: 30px;
   transition: color 0.7s ease;
 }
-
 
 #menue a:hover
 {
@@ -133,7 +134,6 @@ header
   background-color: #7c8d68;
 }
 
-
 #dropdown ul
 {
   display:none;
@@ -160,7 +160,6 @@ header
   position: absolute;
 }
 
-
 #Dienstleistungen
 {
   background-color:  #8da077;
@@ -185,21 +184,11 @@ width: 350px;
 /* --------------------------index-------------------------*/
 /* --------------------------------------------------------*/
 
-h1
-{
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 45px;
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
-
 .unterschrift
 {
   font-family: 'Allison', cursive;
   font-size: 35px;
 }
-
 
 #willkommen
 {
@@ -223,8 +212,6 @@ line-height: 100%;
 #willkommen p
 {
  max-width: 1000px;
-
-
 }
 
 #hofvideo
@@ -239,17 +226,12 @@ line-height: 100%;
 
 #hofvideo iframe
 {
-  
   padding:30px;
   max-width:1000px;
   max-height:563px;
   width:100%;
   height:100%;
-
 }
-
-
-
 
 /* --------------------------------------------------------*/
 /* ------------------------ÜBER UNS------------------------*/
@@ -316,7 +298,6 @@ p.unterschrift
   transform: translate(-50%, -50%);
   user-select: none;
 }
-
 
 .items .item 
 {
@@ -417,6 +398,7 @@ p.unterschrift
 {
   float: right;
 }
+
 .button-container .button:nth-child(2)::before 
 {
   background-image: url("../pics/right.png");
@@ -466,9 +448,6 @@ display: none;
   display: none;
 }
 
-
-
-
 /* --------------------------------------------------------*/
 /* -----------------------UNSER HOF------------------------*/
 /* --------------------------------------------------------*/
@@ -486,7 +465,6 @@ display: none;
   width: 100%;
   padding-top: 0px;
 }
-
 
 #schweine, #energie, #ackerbau
 {
@@ -537,7 +515,8 @@ min-width: 450px;
 width: 100%;
 background-color: rgb(240, 240, 240);
 padding:20px;
-
+padding-left: 50px;
+padding-right: 50px;
 }
 
 #morea, #moreb, #morec, #mored 
@@ -582,12 +561,10 @@ padding:20px;
   width: 400px;
 }
 
-
 .mySlides 
 {
   display: none;
 }
-
 
 .prevb, .nextb 
 {
@@ -621,7 +598,6 @@ padding:20px;
   background-color: #8da077bb;
 }
 
-
 .text 
 {
   color: white;
@@ -633,7 +609,6 @@ padding:20px;
   text-align: center;
 }
 
-
 .numbertext
 {
   color: #f2f2f2;
@@ -642,7 +617,6 @@ padding:20px;
   position: absolute;
   top: 0;
 }
-
 
 .dot 
 {
@@ -654,7 +628,6 @@ padding:20px;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-
 }
 
 .active, .dot:hover 
@@ -681,8 +654,6 @@ padding:20px;
   justify-content: center;
 }
 
-
-
 /* --------------------------------------------------------*/
 /* --------------------DIENSTLEISTUNGEN--------------------*/
 /* --------------------------------------------------------*/
@@ -700,6 +671,12 @@ padding:20px;
   margin-bottom: 30px;
   width: 100%;
   background-color: rgb(240, 240, 240);
+}
+
+#dienstleistungen p
+{
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #dienstleistungen img
@@ -728,7 +705,6 @@ font-size: 25px;
   cursor: pointer;
   border-radius: 3px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-
 }
 
 #Konta:hover
@@ -743,9 +719,6 @@ font-size: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.45);
   transform: translateY(2px);
 }
-
-
-
 
 /* --------------------------------------------------------*/
 /* -------------------------Hofladen-----------------------*/
@@ -771,7 +744,6 @@ font-size: 25px;
   margin: 10px;
 }
 
-
 /* --------------------------------------------------------*/
 /* -------------------------Kontakt------------------------*/
 /* --------------------------------------------------------*/
@@ -786,6 +758,7 @@ font-size: 25px;
   width: 100%;
   background-color: rgb(240, 240, 240);
 }
+
 #maps iframe
 {
   max-width: 400px;
@@ -799,6 +772,7 @@ font-size: 25px;
 {
   display: flex;
 }
+
 #Kontakt #maps p
 {
   position: relative;
@@ -818,7 +792,6 @@ font-size: 25px;
   color: #8d9b7e;
 }
 
-
 /*------------------------------------------Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
@@ -827,34 +800,35 @@ font-size: 25px;
   {
     flex-direction: column;
   }
-#fa1
-{
-  display: block;
-}
-#fa2
-{
-display: none;
-}
 
-#Kontakt #maps
-{
-  flex-direction: column;
-  position:initial;
-}
+  #fa1
+  {
+    display: block;
+  }
 
-#Kontakt #maps p
-{
-  position: initial;
- 
-}
+  #fa2
+  {
+  display: none;
+  }
 
-#Kontakt #maps iframe
-{
-  position: center;
-  right:initial;
-  margin-left: auto;
-  margin-right: auto;
-}
+  #Kontakt #maps
+  {
+    flex-direction: column;
+    position:initial;
+  }
+
+  #Kontakt #maps p
+  {
+    position: initial;
+  }
+
+  #Kontakt #maps iframe
+  {
+    position: center;
+    right:initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #menue
   {
@@ -862,14 +836,14 @@ display: none;
   }
 
   .ham
-{
-  display: initial;
-}
+  {
+    display: initial;
+  }
 
-.menu
-{
-  display: initial;
-}
+  .menu
+  {
+    display: initial;
+  }
 
 /*Hamburgermenü im folgenden*/
 /*----------------------------------------------------------------------------*/
@@ -934,16 +908,15 @@ display: none;
   }
   
   .menu a:hover, .menu #aktuell 
-{
-  color: #FFF;
-  text-decoration: underline;
-}
+  {
+    color: #FFF;
+    text-decoration: underline;
+  }
 
-
-#logo
-{
-  width: 200px;
-}
+  #logo
+  {
+    width: 200px;
+  }
 }
 /*-----------------------------------------------------------------------Handy variante vvvvv*/
 @media (max-width:500px )
@@ -958,5 +931,4 @@ display: none;
   {
     width: 100px;
   }
-
 }
