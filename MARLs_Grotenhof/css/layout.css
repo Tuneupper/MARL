@@ -11,9 +11,10 @@ body
 {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 18pt;	
-  background-color: #ffffff; 
+  background-color: #d6d8d4; 
   text-align: center;
   overflow-x: hidden;
+  line-height:130%;
 }
 
 /*Zentriert das Logo oben und gibt ihm Platz*/
@@ -52,6 +53,7 @@ Kante an, position sticky lässt die nav bar oben dran kleben.*/
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top:0;
+  z-index: 100;
 }
 
 /*Lässt flex zu, gibt die höhe von 40px, lässt alles in der mitte erscheinen 
@@ -82,6 +84,7 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
   transition: color 0.7s ease;
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
 
@@ -181,14 +184,29 @@ width: 350px;
 /* --------------------------index-------------------------*/
 /* --------------------------------------------------------*/
 
+h1
+{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.unterschrift
+{
+  font-family: 'Allison', cursive;
+  font-size: 35px;
+}
+
+
 #willkommen
 {
   max-width: 1120px;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  padding: 10px 100px 50px 100px;
-  margin: 10px;
+  background-color: rgb(240, 240, 240);
+  padding: 30px 100px 20px 100px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,12 +226,25 @@ font-size: 50px;
 #hofvideo
 {
   margin-top: 10px;
-  background-color: #FFF;
+  background-color: rgb(240, 240, 240);
   max-width: 1120px;
-  height: 500px;
+  height: 580px;
   margin-left: auto;
   margin-right: auto;
 }
+
+#hofvideo iframe
+{
+  
+  padding:30px;
+  max-width:1000px;
+  max-height:563px;
+  width:100%;
+  height:100%;
+
+}
+
+
 
 
 /* --------------------------------------------------------*/
@@ -243,6 +274,21 @@ font-size: 50px;
 {
   margin:20px;
   width: 500px;
+}
+
+p.unterschrift
+{
+  font-size: 50px;
+}
+
+#rondell
+{
+  margin-top: 60px;
+  background-color: rgb(240, 240, 240);
+  max-width: 1120px;
+  height: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------------------------------------Slideshow*/
@@ -355,13 +401,10 @@ font-size: 50px;
   background-position: center;
 }
 
-
-
-
 #Vorstellung
 {
   position: relative;
-  top: 575px;
+  top: 595px;
 }
 
 #Vorstellung p
@@ -407,40 +450,208 @@ display: none;
 
 #hofgeschichte
 {
-  background-color: #ffffff;
   max-width: 1120px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  width: 100%;
+  padding-top: 0px;
 }
 
 
-#standbeine
+#schweine, #energie, #ackerbau
 {
-  background-color: #ffffff;
   max-width: 1120px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
-.bild
+#energie a
 {
- width:500px;  
- margin-top: 50px;
- margin-bottom: 50px;;
+text-decoration: none;
+color: black;
+}
+
+#ackerbau
+{
+  margin-bottom: 0px;
+  background-color: rgb(240, 240, 240);
+ 
+}
+
+/*
+#hof
+{
+  background-image: url(../pics/cam/luft/HofLuft.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 20px;
+}
+*/
+
+.hofbild
+{
+width:475px;  
+background-color: rgb(240, 240, 240);
+}
+
+#hof h1
+{
+background-color: rgb(240, 240, 240);
+max-width: 1120px;
+z-index: 10;
+min-width: 450px;
+width: 100%;
+padding-top: 30px;
+}
+
+#bildhintergrund
+{
+  padding-top: 10px;
+  background-color: rgb(240, 240, 240);
+  max-width: 1120px;
+  width: 100%;
+}
+
+#hofgeschichte p, #energie p, #schweine p, #ackerbau p
+{
+max-width:1120px;
+min-width: 450px;
+width: 100%;
+background-color: rgb(240, 240, 240);
+padding:20px;
+
+}
+
+#morea, #moreb, #morec, #mored 
+{
+  display: none;
+}
+
+#myBtna, #myBtnb, #myBtnc, #myBtnd
+{
+  background-color:#8da077;
+  border:none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px);
+}
+
+#myBtna:hover, #myBtnb:hover, #myBtnc:hover, #myBtnd:hover
+{
+  background-color: #7c8d69;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#myBtna:active, #myBtnb:active, #myBtnc:active, #myBtnd:active
+{
+  background-color: #8d9b7e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.45);
+  transform: translateY(-7px);
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1120px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img
+{
+  width: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prevb, .nextb {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prevb
+{
+  left: 0px;
+}
+
+/* Position the "next button" to the right */
+.nextb {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevb:hover, .nextb:hover {
+  background-color: #8da077bb;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#klw
+{
+  max-width: 1000px;
 }
 
 
@@ -449,10 +660,57 @@ display: none;
 /* --------------------DIENSTLEISTUNGEN--------------------*/
 /* --------------------------------------------------------*/
 
+#dienstleistungen
+{
+  padding:30px;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
 
+#dienstleistungen img
+{
+  margin:10px;
+}
 
+#Konta a
+{
+width: 30px;
+height: 15px;
+font-size: 25px;
+}
 
+#Konta
+{
+  background-color:#8da077;
+  border:none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 
+}
+
+#Konta:hover
+{
+  background-color: #7c8d69;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#Konta:active
+{
+  background-color: #8d9b7e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.45);
+  transform: translateY(2px);
+}
 
 
 
@@ -461,11 +719,25 @@ display: none;
 /* -------------------------Hofladen-----------------------*/
 /* --------------------------------------------------------*/
 
+#Hofl
+{
+  padding:30px;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
 
-
-
-
-
+#Hofl img
+{
+  margin: 10px;
+}
 
 
 /* --------------------------------------------------------*/
@@ -474,35 +746,45 @@ display: none;
 
 #Kontakt
 {
-  background-color: #ffffff;
+  padding:30px;
   max-width: 1120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
 }
-
-/* Textformatierung */
-
-h1
+#maps iframe
 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 35px;
-  text-align: center;
+  max-width: 400px;
+  max-height: 400px;
+  margin:10px;
+  position:relative;
+  right:-300px;
 }
-.unterschrift
+
+#Kontakt #maps
 {
-  font-family: 'Allison', cursive;
-  font-size: 35px;
+  display: flex;
+}
+#Kontakt #maps p
+{
+  position: relative;
+  top: 100px;
+  left:150px;
+  margin:10px;
 }
 
+#li
+{
+  margin:20px;
+}
 
-
+#li a
+{
+  text-decoration: none;
+  color: #8d9b7e;
+}
 
 
 /*------------------------------------------Im folgenden ist die i-Pad / Tablet variante */
@@ -541,6 +823,8 @@ h1
     border: none;
     background-color: #8da077;
     cursor: pointer;
+    border-radius: 3px;
+    z-index: 10000;
   }
   
   .xIcon 
@@ -551,6 +835,7 @@ h1
   .menu 
   {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
