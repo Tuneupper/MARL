@@ -1,9 +1,12 @@
-  
-* 
+ * 
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
+  user-select: None;
 }
 
 body 
