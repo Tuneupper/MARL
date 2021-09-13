@@ -1,4 +1,4 @@
-   /* Grundeinstellungen*/
+  
 * 
 {
   margin: 0;
@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-   /* Schriftart, Größe, Hintergrundfarbe*/
 body 
 {
   font-family: Arial,Helvetica,sans-serif;	
@@ -23,7 +22,7 @@ p
   color: rgb(69, 69, 69);
 }
 
-/*Zentriert das Logo oben und gibt ihm Platz*/
+
 header 
 {
   text-align: center;
@@ -33,13 +32,13 @@ header
   background-position-y: middle;
 }
 
-/*Gibt dem Logo seine Größe*/
+
 #logo
 {
   width: 300px;
 }
 
-/*Ausblenden des hamburgermenüs*/
+
 .ham
 {
   display: none;
@@ -51,8 +50,7 @@ header
 
 
 /*------------------------------------------------------------------------Navleiste folgt vvvvv   */
-/*Gibt der Navigation Farbe, padding top passt den abstand zur oberen
-Kante an, position sticky lässt die nav bar oben dran kleben.*/
+
 #menue
 {
   background-color: #8da077;
@@ -62,8 +60,7 @@ Kante an, position sticky lässt die nav bar oben dran kleben.*/
   z-index: 100;
 }
 
-/*Lässt flex zu, gibt die höhe von 40px, lässt alles in der mitte erscheinen 
-und die ul-punkte verschwinden*/
+
 #menue ul 
 {
   display: flex;
@@ -72,11 +69,7 @@ und die ul-punkte verschwinden*/
   list-style: none;
 }
 
-/*Setzt die Farbe fest, gibt die Schriftfarbe, Setzt die Schrftgröße auf das
-1,8 fache, Lässt alles im block erscheinen, ohne Dekorationen, alles in 
-Großschrift, mit einem spacing von 2 px und einer breite 210px von jedem
-Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem 
-ändert sich die Farbe langsam beim hovern.*/
+
 #menue a 
 {
   color:#fdefea;
@@ -111,7 +104,6 @@ Feld und lässt alles in der Mitte seines feldes erscheinen.Zudem
 }
 
 
-/*Lassen das aktuelle sowie das "hovernde" Feld unterstrichen sein*/
 #menue a:hover
 {
   color: #FFF;
@@ -313,7 +305,8 @@ p.unterschrift
   top:300px;
 }
 
-.items {
+.items 
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -322,7 +315,8 @@ p.unterschrift
 }
 
 
-.items .item {
+.items .item 
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -335,25 +329,29 @@ p.unterschrift
   opacity: 0;
 }
 
-.item img {
+.item img 
+{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.item.active {
+.item.active 
+{
   opacity: 1;
   z-index: 99;
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
 
-.item.prev {
+.item.prev 
+{
   z-index: 2;
   opacity: 0.50;
   transform: translate(-125%, -50%);
 }
 
-.item.next {
+.item.next 
+{
   z-index: 2;
   opacity: 0.50;
   transform: translate(25%, -50%);
@@ -361,7 +359,8 @@ p.unterschrift
 
 /*-------------------------------------Buttons*/
 
-.items .button-container {
+.items .button-container 
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -370,7 +369,8 @@ p.unterschrift
   z-index: 100;
 }
 
-.button-container .button {
+.button-container .button 
+{
   color: #fff;
   font-size: 32px;
   cursor: pointer;
@@ -379,11 +379,13 @@ p.unterschrift
   transition: all 300ms ease-in-out;
 }
 
-.button-container .button:hover {
+.button-container .button:hover 
+{
   opacity: 1;
 }
 
-.button-container .button:before {
+.button-container .button:before 
+{
   content: "";
   position: absolute;
   top: 50%;
@@ -396,20 +398,24 @@ p.unterschrift
   z-index: -99;
 }
 
-.button-container .button:nth-child(1) {
+.button-container .button:nth-child(1) 
+{
   float: left;
 }
-.button-container .button:nth-child(1)::before {
+.button-container .button:nth-child(1)::before 
+{
   background-image: url("../pics/left.png");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
 }
 
-.button-container .button:nth-child(2) {
+.button-container .button:nth-child(2) 
+{
   float: right;
 }
-.button-container .button:nth-child(2)::before {
+.button-container .button:nth-child(2)::before 
+{
   background-image: url("../pics/right.png");
   background-repeat: no-repeat;
   background-size: 30px;
@@ -562,7 +568,7 @@ padding:20px;
 }
 
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 1120px;
   position: relative;
@@ -573,13 +579,15 @@ padding:20px;
   width: 400px;
 }
 
-/* Hide the images by default */
-.mySlides {
+
+.mySlides 
+{
   display: none;
 }
 
-/* Next & previous buttons */
-.prevb, .nextb {
+
+.prevb, .nextb 
+{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -599,19 +607,20 @@ padding:20px;
   left: 0px;
 }
 
-/* Position the "next button" to the right */
-.nextb {
+.nextb 
+{
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prevb:hover, .nextb:hover {
+.prevb:hover, .nextb:hover 
+{
   background-color: #8da077bb;
 }
 
-/* Caption text */
-.text {
+
+.text 
+{
   color: white;
   font-size: 20px;
   padding: 8px 12px;
@@ -621,8 +630,9 @@ padding:20px;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+
+.numbertext
+{
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -630,8 +640,9 @@ padding:20px;
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+
+.dot 
+{
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -643,7 +654,8 @@ padding:20px;
 
 }
 
-.active, .dot:hover {
+.active, .dot:hover 
+{
   background-color: #717171;
 }
 
@@ -841,15 +853,11 @@ display: none;
   margin-right: auto;
 }
 
-/*Ausblenden der nav-Leiste*/
   #menue
   {
     display: none;
   }
 
-
-
-/*Einblenden des Hamburgermenüs*/
   .ham
 {
   display: initial;
