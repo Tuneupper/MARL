@@ -813,7 +813,12 @@ font-size: 25px;
   padding-bottom: 30px;
 }
 
-
+#impr
+{
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
 /*------------------------------------------Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
