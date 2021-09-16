@@ -819,6 +819,12 @@ font-size: 25px;
   bottom:0;
   right: 0;
 }
+
+h2
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 /*------------------------------------------Im folgenden ist die i-Pad / Tablet variante */
 @media (max-width:1120px )
 {
