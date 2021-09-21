@@ -1154,5 +1154,9 @@ padding-right: 0px;
   {
     width: 500px;
   }
+  #hofgeschichte p, #energie p, #schweine p, #ackerbau p
+  {
+    width: 500px;
+  }
 
 }
