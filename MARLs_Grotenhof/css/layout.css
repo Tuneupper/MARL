@@ -1149,4 +1149,11 @@ padding-right: 0px;
   {
     width: 100px;
   }
+
+  #rondell
+  {
+    max-width: 500px;
+    height: 850px;
+  }
+
 }
