@@ -1150,10 +1150,9 @@ padding-right: 0px;
     width: 100px;
   }
 
-  #body
+  .backgr
   {
-    width: 100vw;
-    overflow: hidden;
+    width: 500px;
   }
 
 }
