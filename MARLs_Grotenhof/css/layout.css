@@ -1152,6 +1152,7 @@ padding-right: 0px;
 
   #body
   {
+    width: 100vw;
     overflow: hidden;
   }
 
