@@ -16,6 +16,7 @@ body
   text-align: center;
   overflow-x: hidden;
   line-height:130%;
+  overflow-x: hidden;
 }
 
 h1
@@ -1148,15 +1149,6 @@ padding-right: 0px;
   header img 
   {
     width: 100px;
-  }
-
-  .backgr
-  {
-    width: 500px;
-  }
-  #hofgeschichte p, #energie p, #schweine p, #ackerbau p
-  {
-    width: 500px;
   }
 
 }
